@@ -1,0 +1,77 @@
+ :root{
+     --bg-color:white;
+     --gray-dark: antiquewhite;
+     --gray-light: #4f3b3b;
+     --gray-rid: #d5cdcd;
+}
+
+
+*{ box-sizing: border-box;
+
+}
+
+body{
+    background-color: var(--gray-dark);
+    padding: 40px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--gray-light);
+}
+
+.march-container{
+    width: 100%;
+    max-width: 1200px;
+   background-color: white;
+   box-shadow: 0 2px 20px var(--gray-light);
+   border-radius: 10px;
+   margin: auto;
+}
+
+.calendar-header{
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--gray-rid);
+
+}
+
+.calendar-header h1{
+    font-size: 20px;
+    margin: auto 0;
+}
+
+.calendar-header p{
+    font-size: 13px;
+    margin: 5px;
+    font-weight: bold;
+    color: var(--gray-rid);
+    font-weight: bold;
+}
+
+.day-weeks{
+   
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(7, minmax(120px, 1fr));
+    grid-template-columns: px;
+    grid-auto-rows: 120px;
+  
+}
+
+.day{
+    text-align: right;
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--gray-rid);
+    border-right: 1px solid var(--gray-rid);
+    font-size: 12px;
+    color: var(--gray-light);
+}
+
+.day-name{
+    font-size: 15px;
+    color: var(--gray-light);
+    line-height: 120px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid  var(--gray-rid);
+
+}
+
